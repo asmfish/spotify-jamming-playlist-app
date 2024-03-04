@@ -186,11 +186,11 @@ const Spotify = {
             'Authorization': `Bearer ${this.getSpotifyAccessToken()}`
         };
         
-        let userID;
+        //let userID;
         let playListId = selectedPlayList.id;
 
         //1. Get spotify userid
-        userID = await this.getSpotifyUserID();
+        //userID = await this.getSpotifyUserID();
 
         //Check if playList name changed
         if(selectedPlayList.name !== playListName){
