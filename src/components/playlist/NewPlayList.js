@@ -5,7 +5,7 @@ function NewPlayList({newPlayListTracks, removeFromPlayList, selectedPlayList, c
     const [playListName, setPlayListName] = useState('');
 
     useEffect(() =>{
-        setPlayListName(selectedPlayList? selectedPlayList.name: 'New PlayList');
+        setPlayListName(selectedPlayList? selectedPlayList.name: 'New playList');
     }, [selectedPlayList]);
 
     const savePlayLisData = () =>{
@@ -23,8 +23,8 @@ function NewPlayList({newPlayListTracks, removeFromPlayList, selectedPlayList, c
 
     return(
         <div className={styles.resultContainer}>
-            <h3 className={styles.title }>{selectedPlayList ? 'Selected PlayList: '+  selectedPlayList.name : 'New PlayList'}</h3>
-            <div className={styles.item}>New PlayList Name: <input style={inputStyle} type="text" onChange={(e) => setPlayListName(e.target.value)} value={playListName}/></div>
+            <h3 className={styles.title }>{selectedPlayList ? 'Selected playList: '+  selectedPlayList.name : 'New playList'}</h3>
+            <div className={styles.item}>Playlist name: <input style={inputStyle} type="text" onChange={(e) => setPlayListName(e.target.value)} value={playListName}/></div>
             {
                 newPlayListTracks && newPlayListTracks.map((track, index) => {
                     return (

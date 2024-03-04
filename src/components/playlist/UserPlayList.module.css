@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: .8rem;
-    background-color: #1e1b1e;
+    background-color: #924592;
     color: #fff;
 }
 
@@ -16,27 +16,41 @@
     padding: 1rem 0;
 }
 
+
+.item:hover {
+    color: #fff;
+    background-color: #5e6163;
+    cursor: pointer;
+}
+
 .playListName {
     font-weight: bold;
 }
 
 .title{
     text-align: left;
+    margin-left: 0;
+
 }
 
-.updatePlayList {
-    float: right;
+.btnCreateNewPlaylist {
+    background-color: #48a0c0;
+    color: #fff;
+    display: inline-block;
+    padding: .5rem;
 }
 
-button.playList {
-    text-align: left;
+div.header {
     width: 100%;
-    cursor: pointer;
-    font-size: 1.2rem;
+    margin: 0;
+    border-bottom: 1px solid #fff;
+}
+
+div.header span {
+    float: left;
+    font-size: 1.3rem;
     font-weight: bold;
 }
-
-button.playList:hover {
-    color: #fff;
-    background-color: #53a0e3;
+div.header button {
+    float:  right;
 }

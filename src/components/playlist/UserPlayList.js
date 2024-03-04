@@ -5,15 +5,18 @@ function UserPlayList({userPlayList, setSelectedPlayList, showNewPlaylistForm}){
 
     return(
         <div className={styles.resultContainer}>
-            <h3 className={styles.title }>User PlayLists: {userPlayList.length}</h3>
-            <button onClick={showNewPlaylistForm}>+ Create New Playlist</button>
+            <div className={styles.header}>
+                <span className={styles.title }>User playLists: {userPlayList.length}</span>
+                <button onClick={showNewPlaylistForm} className={styles.btnCreateNewPlaylist}>+ Create New</button>
+            </div>
+            <hr />
             {
                 userPlayList && userPlayList.map((playlist, index) => {
                     return (
-                        <div className={styles.item} key={index}>
-                            <button className={styles.playList} onClick={() => setSelectedPlayList(playlist)}>{playlist.name}</button> <br/>
-                            <span className={styles.tracksTotal}>Total Tracks: {playlist.tracks.total}</span><br />
-                            <span className="">Owner: {playlist.owner.display_name}</span>
+                        <div className={styles.item} key={index} onClick={() => setSelectedPlayList(playlist)}>
+                            <span className={styles.playListName}>{playlist.name}</span><br/>
+                            <span>Total Tracks: {playlist.tracks.total}</span><br />
+                            <span>Owner: {playlist.owner.display_name}</span>
                         </div>
                     )
                 })
