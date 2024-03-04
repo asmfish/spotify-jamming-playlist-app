@@ -43,7 +43,7 @@ const Spotify = {
         let url = 'https://accounts.spotify.com/authorize';
         //let redirect_uri = "http://localhost:3000/";
         //let redirect_uri = "http://asmo-jammingspotify-app.surge.sh/";//uncomment this when deploying to surge.sh
-        let redirect_uri = "http://papaya-mooncake-336d8f.netlify.app/";//uncomment this code when deploying to Netfliy
+        let redirect_uri = "http://jamming-spotify-playlist.netlify.app/";//uncomment this code when deploying to Netfliy
     
         url += "?client_id=" + this.CLIENT_ID;
         url += "&response_type=token";
