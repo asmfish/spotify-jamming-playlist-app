@@ -27,7 +27,7 @@ const LoginForm = () =>{
     return (
         <>
             <form onSubmit={handleSubmit} className={styles.loginForm} >
-                <label htmlFor="clientId" className={styles.inputLabel}>User Name:</label>
+                <label htmlFor="clientId" className={styles.inputLabel}>Client ID:</label>
                 <input 
                     type="text" 
                     name="clientId" 
@@ -36,7 +36,7 @@ const LoginForm = () =>{
                     onChange={(e) => setClientId(e.target.value)} 
                     className={styles.inputText}
                 /> <br />
-                <label htmlFor="clientSecret" className={styles.inputLabel}>User Pass:</label> 
+                <label htmlFor="clientSecret" className={styles.inputLabel}>Client Secret:</label> 
                 <input 
                     type="text" 
                     name="clientSecret" 
