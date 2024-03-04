@@ -1,0 +1,33 @@
+
+.app {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flexItem {
+    width: 33%;
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  ._loading_overlay_content {
+    top: 45%;
+    left: 35%;
+    position: fixed;
+  }
+
+#userPlayList {
+    width: 20%;
+}
+  

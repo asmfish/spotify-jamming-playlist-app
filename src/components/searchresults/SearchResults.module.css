@@ -1,0 +1,35 @@
+.resultContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: .8rem;
+    background-color: #c897c8;
+}
+
+.item{
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+    align-items: flex-start;
+    padding: 1rem 0;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.title{
+    text-align: left;
+    font-weight: bold;
+}
+
+button.btnSavePlayList {
+    margin-top: 1rem;
+    width: 10rem;
+    padding: .6rem;
+}
+
+.btnRemoveFromPlayList, .btnAddToPlayList {
+    float: right;
+}

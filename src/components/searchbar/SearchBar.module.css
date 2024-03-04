@@ -1,0 +1,15 @@
+form {
+    width: 100%;
+    background-color: #50b2b9;
+    padding: 1rem;
+}
+
+input[type='text']{
+    width: 50%;
+    height: 2.5rem;
+}
+
+input[type='submit']{
+    width: 10rem;
+    height: 2.5rem;
+}

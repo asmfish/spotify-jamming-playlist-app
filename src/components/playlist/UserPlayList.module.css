@@ -1,0 +1,42 @@
+.resultContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: .8rem;
+    background-color: #1e1b1e;
+    color: #fff;
+}
+
+.item{
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+    align-items: flex-start;
+    padding: 1rem 0;
+}
+
+.playListName {
+    font-weight: bold;
+}
+
+.title{
+    text-align: left;
+}
+
+.updatePlayList {
+    float: right;
+}
+
+button.playList {
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+button.playList:hover {
+    color: #fff;
+    background-color: #53a0e3;
+}

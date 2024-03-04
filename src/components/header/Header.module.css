@@ -1,0 +1,17 @@
+.mainTitle {
+    background-color: #433649;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+}
+
+.info {
+    color: #fff;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1a730c;
+    margin: 0 auto;
+    padding: .5rem;
+}

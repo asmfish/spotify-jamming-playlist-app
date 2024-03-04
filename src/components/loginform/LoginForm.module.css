@@ -1,0 +1,23 @@
+.loginForm {
+    border: 1px solid gray;
+    border-radius: .6rem;
+    width: 60%;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+.inputLabel {
+    display: block;
+    font-weight: bold;
+}
+
+.inputText {
+    height: 2rem;
+    width: 100%;
+}
+
+.btnLogin {
+    margin-top: 1rem;
+    color: #fff;
+    background-color: #2e85be;
+}
