@@ -9,9 +9,8 @@ const LoginForm = () =>{
     const handleSubmit = (e) =>{
         e.preventDefault();
 
-        //Set the spotify client_id and client_secret
+        //Set the spotify client_id
         Spotify.CLIENT_ID = clientId;
-        Spotify.clientSecret = clientSecret;
 
         const accessToken = Spotify.getSpotifyAccessToken();
         console.log('access_toke:' + accessToken);
@@ -34,15 +33,6 @@ const LoginForm = () =>{
                     id="clientId"
                     value={clientId} 
                     onChange={(e) => setClientId(e.target.value)} 
-                    className={styles.inputText}
-                /> <br />
-                <label htmlFor="clientSecret" className={styles.inputLabel}>Client Secret:</label> 
-                <input 
-                    type="text" 
-                    name="clientSecret" 
-                    id="clientSecret"
-                    value={clientSecret} 
-                    onChange={(e) => setClientSecret(e.target.value)} 
                     className={styles.inputText}
                 /> <br />
                 <input type="submit" value="Login" className={styles.btnLogin}/>
